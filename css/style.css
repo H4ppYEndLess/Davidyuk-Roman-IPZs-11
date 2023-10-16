@@ -1,7 +1,9 @@
 :root{
     --main_color: #212121;
     --second_color: #2196F3;
-    --third_color: #757575
+    --third_color: #757575;
+    --ligh_gray:#F5F4FA;
+    --border_color:#f6f6f6;
 }
 a{
     text-decoration: none;
@@ -11,11 +13,24 @@ li{
     list-style-type: none;
 }
 body{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: var(--main_color);
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;  
+    font-weight: 500;
+}
+header{
+    border-bottom: 1px solid var(--border_color);
+}
+/* *{
+    border: 1px solid red;
+} */
+a{
+    color: var(--main_color);
+    margin: 0 auto;
+}
+.logo_footer{
+    color: white;
 }
 .logo_first_half{
     font-family: Raleway;
@@ -34,19 +49,21 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
 }
-.logo_second_half_footer{
-    font-family: Raleway;
-    color: white;
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
-    padding-left: 215px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+.main{
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 215px;
 }
 .navigation_panel{
     display: flex;
@@ -59,6 +76,10 @@ body{
 }
 .navigation_panel_item{
     color: var(--main_color);
+    list-style-type: none;
+}
+.navigation_panel_item_active{
+    color: var(--second_color);
     list-style-type: none;
 }
 .navigation_panel_item:hover,
@@ -91,7 +112,6 @@ body{
 .open_text{
     text-align: center;
     color: white;
-    font-family: Roboto;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
@@ -104,9 +124,11 @@ body{
     height: 50px;
     flex-shrink: 0;
     color:white;
-    font-family: Roboto;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
 }
 .little_title{
     text-transform: uppercase;
@@ -114,7 +136,7 @@ body{
 }
 .first_text{
     color: var(--third_color);
-    font-weight: 400px;
+    font-weight: 400;
 }
 .big_title{
     color: var(--main_color);
@@ -136,9 +158,69 @@ body{
     font-weight: 400;
     text-align: center;
 }
+.navigation_portfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.portfolio_button{
+    background-color: var(--ligh_gray);
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+}
+.portfolio_button:hover{
+    background-color: var(--second_color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+.portfolio_button_text{
+    padding:6px 22px 6px 22px;
+}
+.portfolio_card{
+    border: 1px solid var(--border_color);
+}
+.portfolio_card:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.card_title{
+    color: var(--main_color);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 4px;
+    margin: 0 auto;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+}
+.card_soft_title{
+    color: var(--third_color);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    line-height: 30px; /* 187.5% */
+letter-spacing: 0.48px;
+}
 .footer_section{
     background-color: #2F303A;
     width: 100%;
+}
+.logo_second_half_footer{
+    font-family: Raleway;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 25px;
 }
 .address_info{
     color: white;
@@ -154,4 +236,8 @@ body{
     text-decoration: none;
     padding-left: 215px;
     padding-top: 12px;
+    font-style: normal;
+}
+.footer_text{
+    color:rgba(255, 255, 255, 0.60);
 }

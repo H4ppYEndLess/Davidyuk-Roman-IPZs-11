@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lab 1</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/modern-normalize.css">
@@ -11,18 +11,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oleo Script">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="container">
-            <a href = '#'class="logo_second_half"><span class="logo_first_half">Web</span>Studio</a>
+                <div class="logo_second_half">
+                    <a href = '#' class="logo"><span class="logo_first_half">Web</span>Studio</a>
+                </div>
             <nav>
                 <ul class="navigation_panel">
-                    <li><a href = '#'class="navigation_panel_item">Студія</a></li>
-                    <li><a href = '#'class="navigation_panel_item">Портфоліо</a></li>
-                    <li><a href = '#'class="navigation_panel_item">Контакти</a></li>
+                    <li><a href = '#' class="navigation_panel_item_active">Студія</a></li>
+                    <li><a href = 'portfolio.html' class="navigation_panel_item">Портфоліо</a></li>
+                    <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="panel_info">
@@ -69,11 +72,13 @@
             </section>
         </main>
         <footer class="footer_section">
-            <a href = '#'class="logo_second_half_footer"><span class="logo_first_half">Web</span>Studio</a>
+            <div class="logo_second_half_footer">
+            <a href = '#' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
+            </div>
             <address>            
-                <p class="address_info">м. Київ, пр-т Лесі Українки, 26
-                <p><a href="mailto:info@devstudio.com" class="footer_info">info@devstudio.com</a></p>
-                <p><a href="tel:+380961111111"  class="footer_info">+38 096 111 11 11</a></p>
+                <p class="address_info">м. Київ, пр-т Лесі Українки, 26</p>
+                <p class="footer_info"><a href="mailto:info@devstudio.com" class="footer_text">info@devstudio.com</a></p>
+                <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
             </address>
         </footer>
     </body>
