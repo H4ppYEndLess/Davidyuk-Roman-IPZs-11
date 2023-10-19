@@ -133,6 +133,7 @@ a{
 .little_title{
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 14px;
 }
 .first_text{
     color: var(--third_color);
@@ -176,6 +177,8 @@ a{
 .portfolio_button:hover{
     background-color: var(--second_color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: white;
+    transition: 300ms;
 }
 .portfolio_button_text{
     padding:6px 22px 6px 22px;
@@ -185,6 +188,7 @@ a{
 }
 .portfolio_card:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: 300ms;
 }
 .card_title{
     color: var(--main_color);
@@ -220,7 +224,6 @@ letter-spacing: 0.48px;
     text-decoration: none;
     padding-top: 60px;
     padding-left: 215px;
-    padding-bottom: 25px;
 }
 .address_info{
     color: white;
@@ -228,6 +231,7 @@ letter-spacing: 0.48px;
     font-style: normal;
     padding-left: 215px;
     padding-top: 28px;
+    margin: 0 auto;
 }
 .footer_info{
     color:rgba(255, 255, 255, 0.60);
@@ -237,7 +241,11 @@ letter-spacing: 0.48px;
     padding-left: 215px;
     padding-top: 12px;
     font-style: normal;
+    margin: 0 auto;
 }
 .footer_text{
     color:rgba(255, 255, 255, 0.60);
+}
+.adress{
+    padding-bottom: 60px;
 }
