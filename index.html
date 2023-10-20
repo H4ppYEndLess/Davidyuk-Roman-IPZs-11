@@ -15,31 +15,34 @@
     <body>
         <header>
             <div class="container">
+            <div class="container_header">
                 <div class="logo_second_half">
                     <a href = '#' class="logo"><span class="logo_first_half">Web</span>Studio</a>
                 </div>
-            <nav>
-                <ul class="navigation_panel">
-                    <li><a href = '#' class="navigation_panel_item_active">Студія</a></li>
-                    <li><a href = 'portfolio.html' class="navigation_panel_item">Портфоліо</a></li>
-                    <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
+                <nav>
+                    <ul class="navigation_panel">
+                        <li><a href = '#' class="navigation_panel_item_active">Студія</a></li>
+                        <li><a href = 'portfolio.html' class="navigation_panel_item">Портфоліо</a></li>
+                        <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="panel_info">
+                    <li><a href="mailto:info@devstudio.com" class="info_panel_item">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="info_panel_item">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="panel_info">
-                <li><a href="mailto:info@devstudio.com" class="info_panel_item">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="info_panel_item">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
+            </div>
+            </div>
         </header>
         <main>
-            <div class="container">
             <section class="open_section">
-                <h1 class="open_text">Ефективні рішення для вашого бізнесу</h1>
+                <div class="hero">
+                <h1 class="open_text">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button type="button" class="hero_button">Замовити послугу</button>
             </section>
             </div>
-            <section>                
-                <ul>
+                <section class="features">                
+                    <ul>
+                    <div class="container">
                     <li><h3 class="little_title">Увага до деталей</h3>
                         <p class="first_text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
                     <li><h3 class="little_title">Пунктуальність</h3>
@@ -48,35 +51,44 @@
                         <p class="first_text">Так само консультація з широким активом значною мірою зумовлює.</p></li>
                     <li><h3 class="little_title">Сучасні технології</h3>
                         <p class="first_text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
-                </ul>
+                    </div>
+                    </ul>
                 </section>
-                <section>
+                <section class="hueta">
                     <h2 class="big_title">Чим ми займаємося</h2>
                     <ul>
+                        <div class="container">
                         <li><img src="images/first.jpg" alt="Десктопні додатки" width="370" height="294"></li>
                         <li><img src="images/second.jpg" alt="Мобільні додатки" width="370" height="294"></li>
                         <li><img src="images/third.jpg" alt="Дизайнерські рішення" width="370" height="294"></li>
+                        </div>
                     </ul>
             </section>
-            <section class="our_team">
+            <section class="features">
                 <h2 class="big_title">Наша команда</h2>
                 <ul>
-                    <li><img src="images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260"><h3 class="name_in_card">Ігор Дем'яненко</h3><p class="occupation">Product Designer</p></li>
-                    <li><img src="images/olha.jpg" alt="Ольга Репіна" width="270" height="260"><h3 class="name_in_card">Ольга Репіна</h3><p class="occupation">Frontend Developer</p></li>
-                    <li><img src="images/mykola.jpg" alt="Микола Тарасов" width="270" height="260"><h3 class="name_in_card">Микола Тарасов</h3><p class="occupation">Marketing</p></li>
-                    <li><img src="images/mihaylo.jpg" alt="Михайло Єрмаков" width="270" height="260"><h3 class="name_in_card">Михайло Єрмаков</h3><p class="occupation">UI Designer</p></li>
+                    <div class="container">
+                    <li class="worker_card"><img src="images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260"><h3 class="name_in_card">Ігор Дем'яненко</h3><p class="occupation">Product Designer</p></li>
+                    <li class="worker_card"><img src="images/olha.jpg" alt="Ольга Репіна" width="270" height="260"><h3 class="name_in_card">Ольга Репіна</h3><p class="occupation">Frontend Developer</p></li>
+                    <li class="worker_card"><img src="images/mykola.jpg" alt="Микола Тарасов" width="270" height="260"><h3 class="name_in_card">Микола Тарасов</h3><p class="occupation">Marketing</p></li>
+                    <li class="worker_card"><img src="images/mihaylo.jpg" alt="Михайло Єрмаков" width="270" height="260"><h3 class="name_in_card">Михайло Єрмаков</h3><p class="occupation">UI Designer</p></li>
+                    </div>
                 </ul>
             </section>
         </main>
-        <footer class="footer_section">
-            <div class="logo_second_half_footer">
-            <a href = '#' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
+            <footer class="footer_section">
+                <div class="container">
+                    <div class="container_footer">
+                <div class="logo_second_half_footer">
+                <a href = 'index.html' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
+                </div>
+                <address class="adress">            
+                    <p class="address_info">м. Київ, пр-т Лесі Українки, 26</p>
+                    <p class="footer_info"><a href="mailto:info@devstudio.com" class="footer_text">info@devstudio.com</a></p>
+                    <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
+                </address>
             </div>
-            <address>            
-                <p class="address_info">м. Київ, пр-т Лесі Українки, 26</p>
-                <p class="footer_info"><a href="mailto:info@devstudio.com" class="footer_text">info@devstudio.com</a></p>
-                <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
-            </address>
-        </footer>
-    </body>
-</html>
+            </div>
+            </footer>
+        </body>
+    </html>

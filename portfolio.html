@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lab 2.5</title>
+        <title>Lab 2</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/modern-normalize.css">
         <link rel="icon" href="images/icon.png">
@@ -15,21 +15,24 @@
     <body>
         <header>
             <div class="container">
+            <div class="container_header">
                 <div class="logo_second_half">
-                    <a href = '#' class="logo"><span class="logo_first_half">Web</span>Studio</a>
+                    <a href = 'index.html' class="logo"><span class="logo_first_half">Web</span>Studio</a>
                 </div>
-            <nav>
-                <ul class="navigation_panel">
-                    <li><a href = 'index.html' class="navigation_panel_item">Студія</a></li>
-                    <li><a href = '#' class="navigation_panel_item_active">Портфоліо</a></li>
-                    <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
+            
+                <nav>
+                    <ul class="navigation_panel">
+                        <li><a href = 'index.html' class="navigation_panel_item">Студія</a></li>
+                        <li><a href = '#' class="navigation_panel_item_active">Портфоліо</a></li>
+                        <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="panel_info">
+                    <li><a href="mailto:info@devstudio.com" class="info_panel_item">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="info_panel_item">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="panel_info">
-                <li><a href="mailto:info@devstudio.com" class="info_panel_item">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="info_panel_item">+38 096 111 11 11</a></li>
-            </ul>
-        </div>
+            </div>
+            </div>
         </header>
         <main class="main">
             <ul class="navigation_portfolio">
@@ -39,7 +42,8 @@
             <li><button type="button" class="portfolio_button"><span class="portfolio_button_text">Дизайн</span></button></li>
             <li><button type="button" class="portfolio_button"><span class="portfolio_button_text">Маркетинг</span></button></li>
             </ul>
-            <ul class="cards">
+            <ul>
+                <div class="container">
                 <li class="portfolio_card"><img src="images/technocrack.jpg" alt="Технокряк" width="370" height="294">
                     <p class="card_title">Технокряк</p>
                     <p class="card_soft_title">Веб-сайт</p>
@@ -76,19 +80,22 @@
                     <p class="card_title">Growing Business</p>
                     <p class="card_soft_title">Додток</p>
                 </li>
+            </div>
             </ul>
         </main>
-        <div class="container">
         <footer class="footer_section">
+            <div class="container">
+                <div class="container_footer">
             <div class="logo_second_half_footer">
-            <a href = '#' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
+            <a href = 'index.html' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
             </div>
             <address class="adress">            
                 <p class="address_info">м. Київ, пр-т Лесі Українки, 26</p>
                 <p class="footer_info"><a href="mailto:info@devstudio.com" class="footer_text">info@devstudio.com</a></p>
                 <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
             </address>
-        </footer>
         </div>
+        </div>
+        </footer>
     </body>
 </html>
