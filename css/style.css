@@ -154,10 +154,10 @@ p{
 .hero_button{
     border-radius: 4px;
     background: var(--second_color);
-    flex-shrink: 0;
     color:white;
     font-size: 16px;
-    line-height: 30px;
+    letter-spacing: 0.96px;
+    line-height: 187.5%;
     font-weight: 700;
     padding: 10px 24px 10px 24px;
     border-radius: 5px;
@@ -297,6 +297,11 @@ p{
     font-style: normal;
     margin: 0 auto;
     margin-top: 28px;
+    cursor: pointer;
+}
+.address_info:hover{
+    color: var(--second_color);
+    transition: 300ms ease-in;
 }
 .footer_info{
     color:rgba(255, 255, 255, 0.60);
@@ -306,6 +311,10 @@ p{
     font-style: normal;
     margin: 0 auto;
     margin-top: 12px;
+}
+.footer_text:hover{
+    color: var(--second_color);
+    transition: 300ms ease-in;
 }
 .footer_text{
     color:rgba(255, 255, 255, 0.60);
