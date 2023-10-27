@@ -235,6 +235,7 @@ p{
     border: none;
     font-weight: 500;
     padding: 6px 22px 6px 22px;
+    cursor:pointer;
 }
 .portfolio_button:hover{
     background-color: var(--second_color);
