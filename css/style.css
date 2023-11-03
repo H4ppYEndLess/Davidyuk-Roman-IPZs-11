@@ -5,7 +5,7 @@
     --third_color: #757575;
     --ligh_gray:#F5F4FA;
     --border_color:#f6f6f6;
-    --box_color:#AFB1B8;
+    --icon_color:#AFB1B8;
 }
 a{
     text-decoration: none;
@@ -174,6 +174,9 @@ p{
     color: var(--second_color);
     transition: 300ms;
 }
+header.info_panel_item:hover .icon{
+    fill:var(--second_color)
+}
 .open_section{
     background-color: #2F303A;
     width: 100%;
@@ -304,19 +307,39 @@ p{
     margin-top: 16px;
 }
 .socials_list_item{
+    background-color: white;
     width: 44px;
     height: 44px;
     padding: 12px 12px 12px 12px;
     border-radius: 22px;
 }
-.socials_list_item:hover{
-    background-color: var(--second_color);
-    transition: 300ms ease-out;
+.instagram:hover{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.twitter:hover{
+    background-color: #1DA1F2;
+}
+.facebook:hover{
+    background-color: #4267B2;
+}
+.linkedin:hover{
+    background-color: #0077B5;
+}
+
+.socials_list_item:hover .social_icon{
+    fill: white;
 }
 .social_icon{
     width: 20px;
     height: 20px;
-    fill:var(--third_color)
+    fill:var(--icon_color)
+}
+footer .social_icon{
+    fill: white;
+}
+footer .socials_list_item{
+    background-color: rgba(255, 255, 255, 0.10);;
 }
 .clients{
     padding: 94px 0 94px 0;
@@ -324,7 +347,7 @@ p{
     font-size: 36px;
 }
 .client_logo_box{
-    border: 1px solid var(--box_color);
+    border: 1px solid var(--icon_color);
     border-radius: 4px;
     padding: 16px 32px 16px 32px;
     max-width: 170px;
@@ -336,6 +359,7 @@ p{
     transition: 300ms ease-in;
 }
 .client_logo{
+    fill: var(--icon_color);
     width: 106px;
     height: 60px;
 }
