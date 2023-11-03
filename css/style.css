@@ -175,7 +175,8 @@ p{
     transition: 300ms;
 }
 .info_panel_item:hover .panel_icon{
-    fill:var(--second_color)
+    fill:var(--second_color);
+    transition: 250ms ease-in;
 }
 .open_section{
     background-color: #2F303A;
@@ -331,9 +332,9 @@ p{
     border-radius: 0.3em;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     transition: opacity 0.5s ease-out;
-    z-index: 2;
     opacity: 0;
     border-radius: 22px;
+    z-index: 0;
 }
 .instagram:hover::after{
     opacity: 1;
@@ -357,7 +358,8 @@ p{
 .social_icon{
     width: 20px;
     height: 20px;
-    fill:var(--icon_color)
+    fill:var(--icon_color);
+    z-index: 2;
 }
 footer .social_icon{
     fill: white;
@@ -574,16 +576,6 @@ footer .socials_list_item{
     border: 1px solid var(--second_color);
     background-color: var(--second_color);
     transition: 300ms ease-in;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg)
-  }
-}
-.exit:hover .cross_icon{
-    animation: spin 3s infinite;
-    transform-origin: 150px 100px;
 }
 .is-hidden{
     opacity: 0;
