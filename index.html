@@ -15,6 +15,46 @@
     <body>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <h2 class="modal_text">Залиште свої дані ми вам передзвонимо</h2>
+          <ul>
+            <li>
+              <label for="name" class="modal_label">Ім'я</label>
+              <div class="rel">
+              <input type="text" id="name" class="modal_input">
+              <svg class="input_icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#man"></use>    
+              </svg>
+              </div>
+            </li>
+            <li>
+              <label for="phone" class="modal_label">Телефон</label>
+              <div class="rel">
+              <input type="tel" id="phone" class="modal_input">
+              <svg class="input_icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#telephone"></use>    
+              </svg>
+              </div>
+            </li>
+            <li>
+              <label for="email" class="modal_label">Пошта</label>
+              <div>
+              <input type="email" id="email" class="modal_input">
+              <svg class="input_icon" width="18px" height="18px">
+                <use href="./images/svg/icons.svg#email"></use>    
+              </svg>
+              </div>
+            </li>
+            <li>
+              <label for="comment" class="modal_label">Коментар</label>
+              <textarea name="comment" cols="30" rows="10" class="modal_input_comment" placeholder="Введіть текст"></textarea>
+            </li>
+            <li class="contract">
+              <input type="checkbox" class="checkbox"><label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="https://legal.ubi.com/privacypolicy/en-INTL" class="conditions">Умови договору</a></label>
+            </li>
+            <li class="button">
+              <button class="modal_submit">Відправити</button>
+            </li>
+          </ul>
           <button type="button" class="exit" data-modal-close>
             <svg class="cross_icon" width="11px" height="11px">
               <use href="./images/svg/icons.svg#exit"></use>    
