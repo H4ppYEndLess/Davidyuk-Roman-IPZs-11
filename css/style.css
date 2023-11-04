@@ -56,6 +56,7 @@ a{
 }
 p{
     margin: 0 auto;
+    font-style: normal;
 }
 .logo_first_half{
     font-family: Raleway;
@@ -178,6 +179,9 @@ p{
     fill:var(--second_color);
     transition: 250ms ease-in;
 }
+.panel_icon{
+    fill: var(--icon_color);
+}
 .open_section{
     background-color: #2F303A;
     width: 100%;
@@ -186,9 +190,9 @@ p{
 .hero{
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/hero_bg.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero_bg.jpg);
 }
+
 .open_text{
     max-width: 700px;
     text-align: center;
@@ -306,6 +310,7 @@ p{
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
+    
 }
 .socials_list_item{
     background: white;
@@ -313,12 +318,28 @@ p{
     height: 44px;
     padding: 12px 12px 12px 12px;
     border-radius: 22px;
+    transition-duration: 250ms;
 }
-.instagram:hover{
+.socials_list_item_instagram{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    transition: 300ms ease-in;
-    opacity: 1;
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 22px;
+    transition-duration: 250ms;
+    opacity: 0;
+    z-index: 1;
+    display: block;
+    position: relative;
 }
+.socials_list_item_instagram:hover{
+    opacity: 1;
+    transition-duration: 300ms;
+}
+/* .instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: #d6249f;
+} */
 .twitter:hover{
     background-color: #1DA1F2;
     transition: 300ms ease-in;
@@ -331,7 +352,6 @@ p{
     background-color: #0077B5;
     transition: 300ms ease-in;
 }
-
 .socials_list_item:hover .social_icon{
     fill: white;
 }
@@ -362,11 +382,11 @@ footer .socials_list_item{
 .client_logo_box:hover{
     border: 1px solid var(--second_color);
     fill: var(--second_color);
-    transition: 300ms ease-in;
+    transition-duration: 300ms;
 }
 .client_logo_box:hover .client_logo{
     fill: var(--second_color);
-    transition: 300ms ease-in;
+    transition-duration: 300ms;
 }
 .client_logo{
     fill: var(--icon_color);
