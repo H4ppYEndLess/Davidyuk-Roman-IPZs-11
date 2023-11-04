@@ -637,6 +637,7 @@ footer .socials_list_item{
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     padding: 12px 16px 12px 16px;
+    resize: none;
 }
 .checkbox{
     width: 15px;
@@ -644,8 +645,7 @@ footer .socials_list_item{
     margin-right: 10px;
 }
 .contract{
-    display: inline-flex;
-    align-items: center;
+    text-align: center;
     color: var(--third_color);
     font-size: 14px;
     font-weight: 400;
@@ -682,10 +682,23 @@ footer .socials_list_item{
     left: 12px;
     fill: var(--main_color);
 }
-.rel:hover .input_icon{
+.modal_input:hover .input_icon{
     fill:var(--second_color);
     transition: 300ms;
 }
 .rel{
     position: relative;
+}
+.modal_input:focus{
+    border: 2px solid var(--second_color);
+    transition: 300ms;
+    outline: none;
+}
+.modal_input:focus+.input_icon{
+    fill: var(--second_color);
+    transition: 300ms;
+}
+.modal_input:hover{
+    border: 2px solid var(--second_color);
+    transition: 300ms;
 }
