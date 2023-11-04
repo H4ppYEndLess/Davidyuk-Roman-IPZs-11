@@ -350,9 +350,10 @@ p{
   
 .socials_list_item_instagram:hover::before {
     opacity: 1;
-    fill: white;
   }
-
+.socials_list_item_instagram:hover .social_icon{
+    fill: white;
+}
 .twitter:hover{
     background-color: #1DA1F2;
 
@@ -373,6 +374,7 @@ p{
     height: 20px;
     fill:var(--icon_color);
     z-index: 2;
+    position: absolute;
 }
 footer .social_icon{
     fill: white;
