@@ -683,7 +683,7 @@ footer .socials_list_item{
     fill: var(--main_color);
 }
 .modal_input:hover .input_icon{
-    fill:var(--second_color);
+    fill:var(--second_color) !important;
     transition: 300ms;
 }
 .rel{
