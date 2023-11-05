@@ -690,15 +690,15 @@ footer .socials_list_item{
     position: relative;
 }
 .modal_input:focus{
-    border: 2px solid var(--second_color);
+    border: 1px solid var(--second_color);
     transition: 300ms;
     outline: none;
 }
 .modal_input:focus+.input_icon{
-    fill: var(--second_color);
+    fill: var(--second_color) !important;
     transition: 300ms;
 }
 .modal_input:hover{
-    border: 2px solid var(--second_color);
+    border: 1px solid var(--second_color);
     transition: 300ms;
 }
