@@ -29,7 +29,7 @@
             <li>
               <label for="phone" class="modal_label">Телефон</label>
               <div class="rel">
-              <input type="tel" id="phone" class="modal_input" required>
+              <input type="tel" id="tel" class="modal_input" required>
               <svg class="input_icon" width="18px" height="18px">
                 <use href="./images/svg/icons.svg#telephone"></use>    
               </svg>
@@ -49,7 +49,8 @@
               <textarea name="comment" cols="30" rows="10" class="modal_input_comment" placeholder="Введіть текст"></textarea>
             </li>
             <li class="contract">
-              <input type="checkbox" class="checkbox"><label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="https://legal.ubi.com/privacypolicy/en-INTL" class="conditions">Умови договору</a></label>
+              <input type="checkbox" name="box" class="checkbox" value="agree" id="agree" required>
+              <label for="agree"><span>Погоджуюся з розсилкою та приймаю <a href="https://legal.ubi.com/privacypolicy/en-INTL" class="conditions">Умови договору</a></span></label>
             </li>
             <li class="button">
               <button class="modal_submit">Відправити</button>
@@ -328,9 +329,9 @@
                         <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
                       </address>
                     </div>
-                    <div class="container_footer_join">
+                    <div>
                       <h2 class="join">приєднуйтесь</h2>
-                      <ul class="socials">
+                      <ul class="socials_footer">
                         <li class="bg_inst">
                           <a href="instagram.com" class="socials_list_item_instagram">
                           <svg class="social_icon">
@@ -360,6 +361,20 @@
                       </a>
                         </li>
                   </ul>
+                    </div>
+                      <div class="container_footer_mailing">
+                      <h2 class="join">підпишіться на розсилку</h2>
+                      <form action="">
+                        <input type="email" class="mailing" placeholder="E-mail">
+                          <button type="submit" class="mailing_button">
+                          <div class="mailing_button_div">
+                              Підписатися
+                              <svg class="telegram" width="24px" height="24px">
+                                <use href="./images/svg/icons.svg#telegram"></use>    
+                              </svg>
+                          </div>
+                        </button>
+                      </form>
                     </div>
                   </div>
             </footer>
