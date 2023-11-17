@@ -175,6 +175,7 @@ p{
     color:var(--third_color);
     display: inline-flex;
     transition: 300ms ease-in;
+    align-items: center;
 }
 .info_panel_item:hover,
 .info_panel_item:focus{
@@ -280,7 +281,13 @@ p{
     margin: 0 auto;
     margin-bottom: 10px;
 }
-
+.wrong{
+    color: var(--third_color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
 .first_text{
     color: var(--third_color);
     font-weight: 400;
@@ -414,7 +421,7 @@ footer .socials_list_item{
 }
 .client_logo_box:hover .client_logo{
     fill: var(--second_color);
-    transition-duration: 300ms;
+    transition-duration: 150ms;
 }
 .client_logo{
     fill: var(--icon_color);
@@ -759,7 +766,6 @@ footer .socials_list_item{
   .check:hover svg {
     stroke: #4285F4;
   }
-  
   #cbx:checked + .check svg {
     stroke: #4285F4;
   }
@@ -776,6 +782,7 @@ footer .socials_list_item{
   }
 /* CHECKBOX ANIMATION */
 .contract{
+    position: relative;
     text-align: center;
     color: var(--third_color);
     font-size: 14px;
@@ -783,6 +790,7 @@ footer .socials_list_item{
     line-height: 171.429%;
     letter-spacing: 0.42px;
     margin-top: 20px;
+    padding: 11px 12px 11px;
 }
 .conditions{
     color: var(--second_color);
