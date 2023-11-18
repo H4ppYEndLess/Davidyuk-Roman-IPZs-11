@@ -1,0 +1,69 @@
+@import"./variables.scss";
+@import"./mixin.scss";
+
+.container {
+    @include container();
+		&_header {
+            @include container();
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+		}
+
+		&_footer {
+            @include container();
+            margin: 0 auto;
+            align-items: baseline;
+            &_mailing{
+                margin-left: auto;
+            }
+		}
+}
+
+.title {
+    color: $main-color;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section {
+
+    &_hero {
+        background-color: $footer-color;
+        width: 100%;
+        text-align: center;
+    }
+
+    &_features {
+        padding: 94px 0 94px 0;
+    }
+
+    &_work {
+        padding-bottom: 94px;
+    }
+
+    &_footer {
+        background-color: $footer-color;
+        width: 100%;
+        position: absolute;
+        padding: 60px 0 60px 0;
+    }
+
+    &__team {
+        background-color: $ligh-gray;
+        padding: 94px 0 94px 0;
+    }
+
+    &__clients {
+        padding: 94px 0 94px 0;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &_portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}

@@ -1,0 +1,28 @@
+@import"../variables.scss";
+@import"../mixin.scss";
+
+.client {
+      border: 1px solid $icon-color;
+      border-radius: 4px;
+      padding: 16px 32px 16px 32px;
+      max-width: 170px;
+      max-height: 92px;
+      transition: 300ms ease-in;
+      display: inline-block;
+              &__logo {
+              fill: $icon-color;
+              width: 106px;
+              height: 60px;
+              transition: 300ms ease-in;
+              }
+          &:hover,
+          &:focus{
+              border: 1px solid $second-color;
+              transition-duration: 300ms;
+          }
+          &:hover .client__logo,
+          &:focus .client__logo{
+              fill: $second-color;
+              transition-duration: 150ms;
+          }
+  }

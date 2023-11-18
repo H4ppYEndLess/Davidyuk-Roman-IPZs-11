@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lab 2</title>
+        <title>Lab 7</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/modern-normalize.css">
         <link rel="icon" href="images/icon.png">
@@ -15,25 +15,25 @@
     <body>
         <header>
             <div class="container_header">
-                <div class="logo_second_half">
-                    <a href = '#' class="logo"><span class="logo_first_half">Web</span>Studio</a>
+                <div class="logo">
+                    <a href = 'index.html' class="logo_link"><span class="logo__blue">Web</span>Studio</a>
                 </div>
                 <nav>
-                    <ul class="navigation_panel">
-                        <li><a href = '#' class="navigation_panel_item_active">Студія</a></li>
-                        <li><a href = 'portfolio.html' class="navigation_panel_item">Портфоліо</a></li>
-                        <li><a href = '#' class="navigation_panel_item">Контакти</a></li>
+                    <ul class="navigation">
+                        <li><a href = 'index.html' class="navigation__item">Студія</a></li>
+                        <li><a href = '#' class="navigation__item_active">Портфоліо</a></li>
+                        <li><a href = '#' class="navigation__item">Контакти</a></li>
                     </ul>
                 </nav>
-                <ul class="panel_info">
+                <ul class="info">
                     <li>
-                      <a href="mailto:info@devstudio.com" class="info_panel_item">
-                      <svg width="16" height="12px" class="panel_icon">
+                      <a href="mailto:info@devstudio.com" class="info__item">
+                      <svg width="16" height="12px" class="info__icon">
                         <use href="./images/svg/icons.svg#mail"></use>
                       </svg>
                       info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="info_panel_item">
-                      <svg width="10" height="16px" class="panel_icon">
+                    <li><a href="tel:+380961111111" class="info__item">
+                      <svg width="10" height="16px" class="info__icon">
                         <use href="./images/svg/icons.svg#phone"></use>
                       </svg>
                       +38 096 111 11 11</a></li>
@@ -41,159 +41,158 @@
             </div>
         </header>
         <main class="main">
-            <section class="portfolio">
+            <section class="section_portfolio">
                 <div class="container">
-                    <ul class="navigation_portfolio">
-                        <li><button type="button" class="portfolio_button">Усі</button></li>
-                        <li><button type="button" class="portfolio_button">Веб-сайти</button></li>
-                        <li><button type="button" class="portfolio_button">Додатки</button></li>
-                        <li><button type="button" class="portfolio_button">Дизайн</button></li>
-                        <li><button type="button" class="portfolio_button">Маркетинг</button></li>
+                    <ul class="nav-port">
+                        <li><button type="button" class="nav-port__button">Усі</button></li>
+                        <li><button type="button" class="nav-port__button">Веб-сайти</button></li>
+                        <li><button type="button" class="nav-port__button">Додатки</button></li>
+                        <li><button type="button" class="nav-port__button">Дизайн</button></li>
+                        <li><button type="button" class="nav-port__button">Маркетинг</button></li>
                     </ul>
-                <ul class="cards">
-                
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <ul class="commissions">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/technocrack.jpg" alt="Технокряк" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>      
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>      
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Технокряк</p>
-                        <p class="card_soft_title">Веб-сайт</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Технокряк</p>
+                        <p class="commission-bot__sub-title">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Постер New Orlean vs Golden Star</p>
-                        <p class="card_soft_title">Дизайн</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Постер New Orlean vs Golden Star</p>
+                        <p class="commission-bot__sub-title">Дизайн</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/seafood.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Ресторан Seafood</p>
-                        <p class="card_soft_title">Додаток</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Ресторан Seafood</p>
+                        <p class="commission-bot__sub-title">Додаток</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/prime.jpg" alt="Проєкт Prime" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Проєкт Prime</p>
-                        <p class="card_soft_title">Маркетинг</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Проєкт Prime</p>
+                        <p class="commission-bot__sub-title">Маркетинг</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Проєкт Boxes</p>
-                     <p class="card_soft_title">Додаток</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Проєкт Boxes</p>
+                     <p class="commission-bot__sub-title">Додаток</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/inspiration.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Inspiration has no Borders</p>
-                        <p class="card_soft_title">Веб-сайт</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Inspiration has no Borders</p>
+                        <p class="commission-bot__sub-title">Веб-сайт</p>
                     </div>
                     </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/limeted.jpg" alt="Видання Limited Edition" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Видання Limited Edition</p>
-                        <p class="card_soft_title">Дизайн</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Видання Limited Edition</p>
+                        <p class="commission-bot__sub-title">Дизайн</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/lab.jpg" alt="Проєкт LAB" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                        <p class="card_title">Проєкт LAB</p>
-                        <p class="card_soft_title">Маркетинг</p>
+                    <div class="commission-bot">
+                        <p class="commission-bot__title">Проєкт LAB</p>
+                        <p class="commission-bot__sub-title">Маркетинг</p>
                     </div>
                 </li>
-                <li class="portfolio_card">
-                    <div class="portfolio_image">
+                <li class="commission">
+                    <div class="commission-top">
                         <img src="images/busines.jpg" alt="Growing Business" width="370" height="294">
-                        <div class="overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
+                        <div class="commission-top__overlay"><p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>        
                         </div>
                     </div>
-                    <div class="portfolio_card_bottom">
-                    <p class="card_title">Growing Business</p>
-                    <p class="card_soft_title">Додток</p>
+                    <div class="commission-bot">
+                    <p class="commission-bot__title">Growing Business</p>
+                    <p class="commission-bot__sub-title">Додток</p>
                     </div>
                 </li>
             </div>
             </ul>
         </section>
         </main>
-        <footer class="footer_section">
+        <footer class="section_footer">
             <div class="container_footer"> 
-                <div class="container_footer_info">
-                  <div class="logo_second_half_footer">
-                    <a href = 'index.html' class="logo_footer"><span class="logo_first_half">Web</span>Studio</a>
+                <div class="footer-info">
+                  <div class="logo_footer">
+                    <a href = 'index.html' class="logo__link"><span class="logo__blue">Web</span>Studio</a>
                   </div>
-                  <address class="address_info">            
-                    <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-                    <p class="footer_info"><a href="mailto:info@devstudio.com" class="footer_text">info@devstudio.com</a></p>
-                    <p class="footer_info"><a href="tel:+380961111111" class="footer_text">+38 096 111 11 11</a></p>
+                  <address class="address">            
+                    <p class="address__city">м. Київ, пр-т Лесі Українки, 26</p>
+                    <p class="address__info"><a href="mailto:info@devstudio.com" class="address__text">info@devstudio.com</a></p>
+                    <p class="address__info"><a href="tel:+380961111111" class="address__text">+38 096 111 11 11</a></p>
                   </address>
                 </div>
                 <div>
-                  <h2 class="join">приєднуйтесь</h2>
-                  <ul class="socials_footer">
+                  <h2 class="footer-title">приєднуйтесь</h2>
+                  <ul class="socials">
                     <li class="bg_inst">
-                      <a href="instagram.com" class="socials_list_item_instagram">
-                      <svg class="social_icon">
+                      <a href="instagram.com" class="socials__instagram">
+                      <svg class="socials__icon">
                         <use href="./images/svg/icons.svg#instagram"></use>    
                       </svg>
                     </a>
                     </li>
                     <li>
-                      <a href="twitter.com" class="socials_list_item twitter">
-                      <svg class="social_icon">
+                      <a href="twitter.com" class="socials__item_footer twitter">
+                      <svg class="socials__icon">
                         <use href="./images/svg/icons.svg#twitter"></use>    
                       </svg>
                     </a>
                     </li>
                     <li>
-                        <a href="facebook.com" class="socials_list_item facebook">
-                      <svg class="social_icon">
+                        <a href="facebook.com" class="socials__item_footer facebook">
+                      <svg class="socials__icon">
                         <use href="./images/svg/icons.svg#facebook"></use>    
                     </svg>
                   </a>
                     </li>
                     <li>
-                      <a href="linkedin.com" class="socials_list_item linkedin">
-                      <svg class="social_icon">
+                      <a href="linkedin.com" class="socials__item_footer linkedin">
+                      <svg class="socials__icon">
                         <use href="./images/svg/icons.svg#linkedin"></use>    
                     </svg>
                   </a>
@@ -201,13 +200,13 @@
               </ul>
                 </div>
                   <div class="container_footer_mailing">
-                  <h2 class="join">підпишіться на розсилку</h2>
-                  <form action="">
-                    <input type="email" class="mailing" placeholder="E-mail">
-                      <button type="submit" class="mailing_button">
-                      <div class="mailing_button_div">
+                  <h2 class="footer-title">підпишіться на розсилку</h2>
+                  <form action="#" class="form">
+                    <input type="email" class="form__mailing" placeholder="E-mail" required>
+                      <button type="submit" class="form__button">
+                      <div class="form__submit">
                           Підписатися
-                          <svg class="telegram" width="24px" height="24px">
+                          <svg class="form_icon" width="24px" height="24px">
                             <use href="./images/svg/icons.svg#telegram"></use>    
                           </svg>
                       </div>
