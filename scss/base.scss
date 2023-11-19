@@ -43,10 +43,10 @@
     }
 }
 
-@media (max-width:480px){
-    .container{
-        @include container(450px);
-    };
+@media (max-width:640px){
+        .container{
+        max-width: 450px !important;
+    }
 }
 
 .container {
