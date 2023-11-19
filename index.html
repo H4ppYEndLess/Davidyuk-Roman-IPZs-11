@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Усьо</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/modern-normalize.css">
@@ -74,6 +74,37 @@
       </div>
       </div>
         <header>
+          <div class="burger burger_close" open-menu>
+            <span></span>
+          </div>
+          <div class="menu_android closed" menu>
+            <nav>
+              <ul class="navigation_android">
+                  <li><a href = '#' class="navigation__item_android active">Студія</a></li>
+                  <li><a href = 'portfolio.html' class="navigation__item_android">Портфоліо</a></li>
+                  <li><a href = '#' class="navigation__item_android">Контакти</a></li>
+              </ul>
+            </nav>
+            <div style="margin-top: auto;">
+              <ul class="info_android">
+                <li>
+                  <a href="tel:+380961111111" class="info_android-tel">
+                  +38 096 111 11 11</a></li>
+                <li  class="info_android-email">
+                  <a href="mailto:info@devstudio.com"  class="info_android-email">
+                  info@devstudio.com</a>
+                </li>                
+              </ul>
+            </div>
+            <div>
+            <ul class="menu__social">
+              <li class="menu__social_item border">Intagram</li>
+              <li class="menu__social_item border">Twitter</li>
+              <li class="menu__social_item border">Facebook</li>
+              <li>LinkedIn</li>
+            </ul>
+            </div>
+          </div>
             <div class="container_header">
                 <div class="logo">
                     <a href = '#'><span class="logo__blue">Web</span>Studio</a>
@@ -408,5 +439,6 @@
                   </div>
             </footer>
             <script src="./js/modal.js"></script>
+            <script src="./js/menu.js"></script>
         </body>
     </html>

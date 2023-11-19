@@ -14,32 +14,63 @@
     </head>
     <body>
         <header>
-            <div class="container_header">
-                <div class="logo">
-                    <a href = 'index.html' class="logo_link"><span class="logo__blue">Web</span>Studio</a>
-                </div>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href = 'index.html' class="navigation__item">Студія</a></li>
-                        <li><a href = '#' class="navigation__item_active">Портфоліо</a></li>
-                        <li><a href = '#' class="navigation__item">Контакти</a></li>
-                    </ul>
-                </nav>
-                <ul class="info">
-                    <li>
-                      <a href="mailto:info@devstudio.com" class="info__item">
-                      <svg width="16" height="12px" class="info__icon">
-                        <use href="./images/svg/icons.svg#mail"></use>
-                      </svg>
-                      info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="info__item">
-                      <svg width="10" height="16px" class="info__icon">
-                        <use href="./images/svg/icons.svg#phone"></use>
-                      </svg>
-                      +38 096 111 11 11</a></li>
-                </ul>
+            <div class="burger burger_close" open-menu>
+              <span></span>
             </div>
-        </header>
+            <div class="menu_android closed" menu>
+              <nav>
+                <ul class="navigation_android">
+                    <li><a href = 'index.html' class="navigation__item_android">Студія</a></li>
+                    <li><a href = 'portfolio.html' class="navigation__item_android active">Портфоліо</a></li>
+                    <li><a href = '#' class="navigation__item_android">Контакти</a></li>
+                </ul>
+              </nav>
+              <div style="margin-top: auto;">
+                <ul class="info_android">
+                  <li>
+                    <a href="tel:+380961111111" class="info_android-tel">
+                    +38 096 111 11 11</a></li>
+                  <li  class="info_android-email">
+                    <a href="mailto:info@devstudio.com"  class="info_android-email">
+                    info@devstudio.com</a>
+                  </li>                
+                </ul>
+              </div>
+              <div>
+              <ul class="menu__social">
+                <li class="menu__social_item border">Intagram</li>
+                <li class="menu__social_item border">Twitter</li>
+                <li class="menu__social_item border">Facebook</li>
+                <li>LinkedIn</li>
+              </ul>
+              </div>
+            </div>
+              <div class="container_header">
+                  <div class="logo">
+                      <a href = 'index.html'><span class="logo__blue">Web</span>Studio</a>
+                  </div>
+                  <nav>
+                      <ul class="navigation">
+                          <li><a href = 'index.html' class="navigation__item">Студія</a></li>
+                          <li><a href = 'portfolio.html' class="navigation__item_active">Портфоліо</a></li>
+                          <li><a href = '#' class="navigation__item">Контакти</a></li>
+                      </ul>
+                  </nav>
+                  <ul class="info">
+                      <li>
+                        <a href="mailto:info@devstudio.com" class="info__item">
+                        <svg width="16" height="12px" class="info__icon  icon">
+                          <use href="./images/svg/icons.svg#mail"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                      <li><a href="tel:+380961111111" class="info__item">
+                        <svg width="10" height="16px" class="info__icon icon">
+                          <use href="./images/svg/icons.svg#phone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                  </ul>
+              </div>
+          </header>
         <main class="main">
             <section class="section_portfolio">
                 <div class="container">
@@ -215,5 +246,6 @@
                 </div>
               </div>
         </footer>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
