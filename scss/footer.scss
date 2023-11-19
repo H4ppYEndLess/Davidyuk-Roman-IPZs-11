@@ -1,6 +1,33 @@
 @import"./variables.scss";
 @import"./mixin.scss";
 
+@media (max-width:1024px){
+      .form{
+            &__button{
+                  margin-top: 20px;
+            }
+      }
+  }
+
+  @media (max-width:640px){
+      .footer-info{
+            margin-right: 0px !important;
+      }
+      .footer-title{
+            text-align: center;
+      }
+      .address{
+            &__info{
+                  margin-right: 0px !important;
+                  margin-top: 12px !important;
+                  text-align: center;
+            }
+      }
+      .logo_footer{
+            text-align: center;
+      }
+  }
+
 .footer-info {
     margin-right: 70px;
 }

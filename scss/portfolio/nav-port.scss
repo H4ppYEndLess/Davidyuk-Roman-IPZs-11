@@ -1,6 +1,13 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:640px){
+    .nav-port{
+        justify-content: flex-start !important;
+        max-width: 320px;
+    }
+}
+
 .nav-port {
     display: flex;
     justify-content: center;

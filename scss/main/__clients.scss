@@ -1,6 +1,22 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:1024px){
+    .client{
+        max-width: 226px !important;
+        max-height: 92px !important;
+        padding: 16px 60px 16px 60px !important;
+    }
+}
+
+@media (max-width:640px){
+    .client{
+        max-width: 210px !important;
+        max-height: 92px !important;
+        padding: 16px 60px 16px 60px !important;
+    }
+}
+
 .client {
       border: 1px solid $icon-color;
       border-radius: 4px;

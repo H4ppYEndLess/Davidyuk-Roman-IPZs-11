@@ -1,6 +1,24 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:1024px){
+    .card{
+        & img{
+            width: 354px;
+            height: 374px;
+        }
+    }
+}
+
+@media (max-width:640px){
+    .card{
+        & img{
+            width: 450px;
+            height: 460px;
+        }
+    }
+}
+
 .card {
       background-color: white;
       border-radius: 0px 0px 4px 4px;

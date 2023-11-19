@@ -1,6 +1,40 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:1024px){
+    .modal{
+        min-width: 370px;
+        &__title{
+            max-width: 370px;   
+        }
+        &__absolute{
+            width: 100%;
+            font-size: 12px;
+        }
+        &__li_checkbox{
+            text-align: inherit;
+        }
+    }
+}
+
+@media (max-width:640px){
+    .modal{
+
+        min-width: 370px !important;
+        max-width: 450px !important;
+        &__title{
+            max-width: 370px;   
+        }
+        &__absolute{
+            width: 100%;
+            font-size: 12px;
+        }
+        &__li_checkbox{
+            text-align: inherit;
+        }
+    }
+}
+
 .modal {
     display: block;
     align-self: center;

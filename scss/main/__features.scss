@@ -1,6 +1,25 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:1024px){
+      .feature{
+            max-width: 354px !important;
+            & svg{
+                  width: 70px;
+                  height: 70px;
+            }
+      }
+  }
+  @media (max-width:640px){
+      .feature{
+            max-width: 450px !important;
+            & svg{
+                  width: 70px;
+                  height: 70px;
+            }
+      }
+  }
+
 .feature {
     color: $third-color;
     font-weight: 400;

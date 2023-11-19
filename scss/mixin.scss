@@ -19,11 +19,11 @@
     padding: $padd;
     border-radius: $rad;
 }
-@mixin container{
+@mixin container($max){
         display: flex;
         flex-wrap: wrap;
         padding: 0 15px;
         margin: 0 auto;
         gap: 30px;
-        max-width: 1200px;
+        max-width: $max;
 }

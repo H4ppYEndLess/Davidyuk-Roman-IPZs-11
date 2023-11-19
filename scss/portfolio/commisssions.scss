@@ -1,6 +1,18 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
+@media (max-width:1024px){
+    .commissions{
+        justify-content: center;
+    }
+}
+
+@media (max-width:640px){
+    .commission{
+        width: 450px !important;
+    }
+}
+
 .nav-port {
     display: flex;
     justify-content: center;
