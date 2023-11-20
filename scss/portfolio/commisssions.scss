@@ -14,7 +14,10 @@
 
 @media (max-width:640px){
     .commission{
-        width: 450px !important;
+        max-width: 450px !important;
+    }
+    .commission img{
+    width: 450px;
     }
 }
 
