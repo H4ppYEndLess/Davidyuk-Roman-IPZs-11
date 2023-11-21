@@ -101,7 +101,7 @@
               <li class="menu__social_item border">Intagram</li>
               <li class="menu__social_item border">Twitter</li>
               <li class="menu__social_item border">Facebook</li>
-              <li>LinkedIn</li>
+              <li class="menu__social_item">LinkedIn</li>
             </ul>
             </div>
           </div>
@@ -305,7 +305,7 @@
                             </li>
                             <li>
                               <a href="twitter.com" class="socials__item twitter">
-                              <svg class="socials__icon">
+                              <svg class="socials__icon"> 
                                 <use href="./images/svg/icons.svg#twitter"></use>    
                               </svg>
                             </a>
@@ -424,20 +424,22 @@
                     </div>
                       <div class="container_footer_mailing">
                       <h2 class="footer-title">підпишіться на розсилку</h2>
-                      <form action="#" class="form">
-                        <input type="email" class="form__mailing" placeholder="E-mail" required>
-                          <button type="submit" class="form__button">
-                          <div class="form__submit">
-                              Підписатися
-                              <svg class="form_icon" width="24px" height="24px">
-                                <use href="./images/svg/icons.svg#telegram"></use>    
-                              </svg>
-                          </div>
+                      <form action="/send-email" method="POST" class="form" onsubmit="sendEmail(event)">
+                        <input type="email" name="email" class="form__mailing" placeholder="E-mail" required>
+                        <button type="submit" class="form__button">
+                            <div class="form__submit">
+                                Підписатися
+                                <svg class="form_icon" width="24px" height="24px">
+                                    <use href="./images/svg/icons.svg#telegram"></use>
+                                </svg>
+                            </div>
                         </button>
-                      </form>
+                    </form>
                     </div>
                   </div>
             </footer>
+            <script src="https://smtpjs.com/v3/smtp.js"></script> 
+            <script src="./js/mailing.js"></script>
             <script src="./js/modal.js"></script>
             <script src="./js/menu.js"></script>
         </body>
