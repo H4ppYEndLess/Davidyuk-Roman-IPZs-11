@@ -11,11 +11,8 @@
 }
 
 @media (max-width:640px){
-    .card{
-        & img{
-            width: 450px;
-            height: 460px;
-        }
+    .card img{
+        width: 100% !important;
     }
 }
 
