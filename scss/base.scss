@@ -1,0 +1,121 @@
+@import"./variables.scss";
+@import"./mixin.scss";
+
+@media (max-width:1024px){
+    .section{
+        &_work{
+            display: none
+        }
+        &_footer{
+            padding: 60px !important;
+        }
+        &_features {
+            padding: 60px 0 60px 0 !important;
+        }
+    
+        &_work {
+            padding-bottom: 60px !important;
+        }
+    
+        &_team {
+            padding: 60px 0 60px 0 !important;
+        }
+    
+        &_clients {
+            padding: 60px 0 60px 0 !important;
+        }
+        &_portfolio {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+        }
+    }
+    .container{
+        @include container(768px !important);
+        justify-content: center !important;
+        &_footer{
+            justify-content: center;
+            &_mailing{
+                margin-top: 60px;
+                text-align: center;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width:640px){
+        .container{
+        max-width: 450px !important;
+    }
+}
+
+.container {
+    @include container(1200px);
+		&_header {
+            @include container(1200px);
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+		}
+
+		&_footer {
+            @include container(1200px);
+            margin: 0 auto;
+            align-items: baseline;
+            &_mailing{
+                margin-left: auto;
+            }
+		}
+}
+
+.title {
+    color: $main-color;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section {
+
+    &_hero {
+        background-color: $footer-color;
+        width: 100%;
+        text-align: center;
+    }
+
+    &_features {
+        padding: 94px 0 94px 0;
+    }
+
+    &_work {
+        padding-bottom: 94px;
+    }
+
+    &_footer {
+        background-color: $footer-color;
+        width: 100%;
+        position: absolute;
+        padding: 60px 0 60px 0;
+    }
+
+    &_team {
+        background-color: $ligh-gray;
+        padding: 94px 0 94px 0;
+    }
+
+    &_clients {
+        padding: 94px 0 94px 0;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &_portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.burger{
+    display: none;
+}
