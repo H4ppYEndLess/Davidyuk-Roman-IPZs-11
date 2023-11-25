@@ -17,3 +17,9 @@
               bottom: 0%;
               }
   }
+
+  .working{
+      @media (max-width:1024px){
+            display: none;
+      }
+  }

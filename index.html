@@ -50,7 +50,6 @@
               <textarea name="comment" cols="30" rows="10" class="modal__textarea" placeholder="Введіть текст"></textarea>
             </li>
             <li class="modal__li_checkbox"> 
-              <div class="modal__absolute">
               <input type="checkbox" id="cbx" class="modal__checkbox-fix" style="display: none;">
               <label for="cbx" class="modal__check">
                 <svg width="18px" height="18px" viewBox="0 0 18 18">
@@ -59,7 +58,6 @@
                 </svg>
                 <span class="modal__span-text">Погоджуюся з розсилкою та приймаю <a href="https://legal.ubi.com/privacypolicy/en-INTL" class="modal__span">Умови договору</a></span>
               </label>
-            </div>
             </li>
             <li class="modal__li_button">
               <button class="modal__submit">Відправити</button>
@@ -70,9 +68,9 @@
               <use href="./images/svg/icons.svg#exit"></use>    
             </svg>
           </button>
-        </form>
-      </div>
-      </div>
+          </form>
+        </div>
+        </div>
         <header>
           <div class="burger burger_close" open-menu>
             <span></span>
@@ -85,7 +83,6 @@
                   <li><a href = '#' class="navigation__item_android">Контакти</a></li>
               </ul>
             </nav>
-            <div style="margin-top: auto;">
               <ul class="info_android">
                 <li>
                   <a href="tel:+380961111111" class="info_android-tel">
@@ -95,7 +92,6 @@
                   info@devstudio.com</a>
                 </li>                
               </ul>
-            </div>
             <div>
             <ul class="menu__social">
               <li class="menu__social_item border">Intagram</li>
@@ -132,15 +128,13 @@
             </div>
         </header>
         <main>
-            <section class="section_hero">
-                <div class="hero">
+            <section class="hero">
                     <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
                     <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-                </div>
             </section>
-                <section class="section_features">                
-                    <ul>
-                    <div class="container">
+                <section class="features">
+                  <div class="container">                
+                    <ul class=" features__list">
                     <li class="feature">
                         <div class="feature__icon">
                             <svg>
@@ -173,57 +167,58 @@
                         </div>
                         <h3 class="feature__title">Сучасні технології</h3>
                         <p class="feature__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
-                    </div>
-                    </ul>
+                     </ul>
+                  </div>
                 </section>
-                <section class="section_work">
+                <section class="working">
                     <h2 class="title">Чим ми займаємося</h2>
-                    <ul>
-                        <div class="container">
-                        <li class="occupation"><img src="images/first.jpg" alt="Десктопні додатки" width="370" height="294"><div class="occupation__title">Десктопні додатки</div></li>
-                        <li class="occupation"><img src="images/second.jpg" alt="Мобільні додатки" width="370" height="294"><div class="occupation__title">Мобільні додатки</div></li>
-                        <li class="occupation"><img src="images/third.jpg" alt="Дизайнерські рішення" width="370" height="294"><div class="occupation__title">Дизайнерські рішення</div></li>
-                        </div>
-                    </ul>
-            </section>
-            <section class="section_team">
-                <h2 class="title">Наша команда</h2>
-                <ul>
                     <div class="container">
-                    <li class="card"><img src="images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260">
-                        <div class="card__footer">
-                          <h3 class="card__title">Ігор Дем'яненко</h3><p class="card__sub-title">Product Designer</p>
-                        <ul class="socials">
-                              <li>
-                                <a href="instagram.com" class="socials__instagram">
-                                <svg class="socials__icon">
-                                  <use href="./images/svg/icons.svg#instagram"></use>    
+                      <ul class="work">
+                          <li class="occupation"><img src="images/first.jpg" alt="Десктопні додатки" width="370" height="294"><div class="occupation__title">Десктопні додатки</div></li>
+                          <li class="occupation"><img src="images/second.jpg" alt="Мобільні додатки" width="370" height="294"><div class="occupation__title">Мобільні додатки</div></li>
+                          <li class="occupation"><img src="images/third.jpg" alt="Дизайнерські рішення" width="370" height="294"><div class="occupation__title">Дизайнерські рішення</div></li>
+                      </ul>
+                    </div>
+            </section>
+            <section class="team">
+                <h2 class="title">Наша команда</h2>
+                <div class="container">
+                  <ul class="team__list">
+                      <li class="card"><img src="images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                          <div class="card__footer">
+                            <h3 class="card__title">Ігор Дем'яненко</h3><p class="card__sub-title">Product Designer</p>
+                          <ul class="socials">
+                                <li>
+                                  <a href="instagram.com" class="socials__instagram">
+                                  <svg class="socials__icon">
+                                    <use href="./images/svg/icons.svg#instagram"></use>    
+                                  </svg>
+                                </a>
+                                </li>
+                                <li>
+                                  <a href="twitter.com" class="socials__item twitter">
+                                  <svg class="socials__icon">
+                                    <use href="./images/svg/icons.svg#twitter"></use>    
+                                  </svg>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="facebook.com"  class="socials__item facebook">
+                                  <svg class="socials__icon">
+                                    <use href="./images/svg/icons.svg#facebook"></use>    
                                 </svg>
                               </a>
-                              </li>
-                              <li>
-                                <a href="twitter.com" class="socials__item twitter">
-                                <svg class="socials__icon">
-                                  <use href="./images/svg/icons.svg#twitter"></use>    
+                                </li>
+                                <li>
+                                  <a href="linkedin.com" class="socials__item linkedin">
+                                  <svg class="socials__icon">
+                                    <use href="./images/svg/icons.svg#linkedin"></use>    
                                 </svg>
                               </a>
-                              </li>
-                              <li>
-                                  <a href="facebook.com"  class="socials__item facebook">
-                                <svg class="socials__icon">
-                                  <use href="./images/svg/icons.svg#facebook"></use>    
-                              </svg>
-                            </a>
-                              </li>
-                              <li>
-                                <a href="linkedin.com" class="socials__item linkedin">
-                                <svg class="socials__icon">
-                                  <use href="./images/svg/icons.svg#linkedin"></use>    
-                              </svg>
-                            </a>
-                              </li>
-                        </ul>
-                        </div></li>
+                                </li>
+                          </ul>
+                        </div>
+                      </li>
                     <li class="card"><img src="images/olha.jpg" alt="Ольга Репіна" width="270" height="260">
                         <div class="card__footer">
                           <h3 class="card__title">Ольга Репіна</h3><p class="card__sub-title">Frontend Developer</p>
@@ -325,56 +320,58 @@
                           </a>
                             </li>
                       </ul>
+                    </div>
             </section>
-            <section class="section_clients">
+            <section>
                 <h2 class="title">
                   Постійні клієнти
                 </h2>
-                <ul>
                 <div class="container">
-                <li>
-                  <a href="https://www.youtube.com/watch?v=OO7zUml5q20&ab_channel=NapalmRecords"   class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_1"></use>    
-                  </svg>
-                </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"   class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_2"></use>    
-                  </svg>
-                </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=Nkwhj96kVyU&ab_channel=NapalmRecords"   class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_3"></use>    
-                  </svg>
-                </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=aBcqQsL9dsU&ab_channel=ClubSounds"   class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_4"></use>    
-                  </svg>
-                </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=rsLvcteVve0&ab_channel=vychurno"   class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_5"></use>    
-                  </svg>
-                </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=3X8dvGN1C-4&ab_channel=ArinNation"  class="client">
-                  <svg class="client__logo">
-                    <use href="./images/svg/icons.svg#logo_6"></use>    
-                  </svg>
-                </a>
-                </li>
-              </ul>
+                    <ul class="clients">
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=OO7zUml5q20&ab_channel=NapalmRecords"   class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_1"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"   class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_2"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=Nkwhj96kVyU&ab_channel=NapalmRecords"   class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_3"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=aBcqQsL9dsU&ab_channel=ClubSounds"   class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_4"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=rsLvcteVve0&ab_channel=vychurno"   class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_5"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=3X8dvGN1C-4&ab_channel=ArinNation"  class="client">
+                      <svg class="client__logo">
+                        <use href="./images/svg/icons.svg#logo_6"></use>    
+                      </svg>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
             </section>
         </main>
             <footer class="section_footer">

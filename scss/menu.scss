@@ -29,8 +29,7 @@
             font-weight: 500;
             line-height: 122.22%;
             letter-spacing: 0.36px;
-            max-width: 70% !important;
-            justify-content: center;
+            justify-content: flex-start;
             &_item{
                 position: relative;
                 &::after{

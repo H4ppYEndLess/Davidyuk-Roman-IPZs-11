@@ -1,40 +1,6 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
-@media (max-width:1024px){
-    .modal{
-        min-width: 370px;
-        &__title{
-            max-width: 370px;   
-        }
-        &__absolute{
-            width: 100%;
-            font-size: 12px;
-        }
-        &__li_checkbox{
-            text-align: inherit;
-        }
-    }
-}
-
-@media (max-width:640px){
-    .modal{
-
-        min-width: 370px !important;
-        max-width: 450px !important;
-        &__title{
-            max-width: 370px;   
-        }
-        &__absolute{
-            width: 100%;
-            font-size: 12px;
-        }
-        &__li_checkbox{
-            text-align: inherit;
-        }
-    }
-}
-
 .modal {
     display: block;
     align-self: center;
@@ -129,7 +95,6 @@
                 line-height: 171.429%;
                 letter-spacing: 0.42px;
                 margin-top: 20px;
-                padding: 11px 12px 11px;
 			}
 
 			&_button {
@@ -138,13 +103,14 @@
 		}
 
 		&__check {
+            display: flex;
             cursor: pointer;
             position: relative;
             margin: auto;
-            width: 18px;
-            height: 18px;
+            width: 100%;
             -webkit-tap-highlight-color: transparent;
             transform: translate3d(0, 0, 0);
+            align-items: center;
             & svg{
                 position: relative;
                 z-index: 1;
@@ -155,6 +121,10 @@
                 stroke-width: 1.5;
                 transform: translate3d(0, 0, 0);
                 transition: all 0.2s ease;
+                margin-left: 12px;
+                @media (max-width:768px){
+                    margin-left: 0;
+                }
             }
             & svg path{
                 stroke-dasharray: 60;
@@ -212,7 +182,16 @@
             }
 		}
         &__span-text{
-            margin-left: 9px;
+            margin-left: 24px;
+            @media (max-width:768px){
+                margin-left: 8px;
+            }
+            @media (max-width:650px){
+                font-size: 12px;
+            }
+        }
+        @media (max-width:320px){
+            padding: 20px;
         }
 }
 #cbx:checked + .modal__check svg {
@@ -243,3 +222,37 @@
     transition: all 0.2s linear;
     transition-delay: 0.15s;
   }
+
+  @media (max-width:1024px){
+    .modal{
+        min-width: 370px;
+        &__title{
+            max-width: 370px;   
+        }
+        &__absolute{
+            width: 100%;
+            font-size: 12px;
+        }
+        &__li_checkbox{
+            text-align: inherit;
+        }
+    }
+}
+
+@media (max-width:640px){
+    .modal{
+
+        min-width: 370px;
+        max-width: 450px;
+        &__title{
+            max-width: 370px;   
+        }
+        &__absolute{
+            width: 100%;
+            font-size: 12px;
+        }
+        &__li_checkbox{
+            text-align: inherit;
+        }
+    }
+}

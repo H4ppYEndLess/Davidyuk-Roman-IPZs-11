@@ -1,25 +1,6 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
-@media (max-width:1024px){
-      .feature{
-            max-width: 354px !important;
-            & svg{
-                  width: 70px;
-                  height: 70px;
-            }
-      }
-  }
-  @media (max-width:640px){
-      .feature{
-            max-width: 450px !important;
-            & svg{
-                  width: 70px;
-                  height: 70px;
-            }
-      }
-  }
-
 .feature {
     color: $third-color;
     font-weight: 400;
@@ -33,6 +14,9 @@
             max-height: 120px;
             margin-bottom: 30px;
             padding: 25px 100px 25px 100px;
+            @media (max-width:480px){
+                  padding: 25px 190px;
+              }
 		}
 
 		&__title {
@@ -53,3 +37,22 @@
             margin: 0 auto;
 		}
 }
+
+@media (max-width:1024px){
+      .feature{
+            max-width: 354px;
+            & svg{
+                  width: 70px;
+                  height: 70px;
+            }
+      }
+  }
+  @media (max-width:640px){
+      .feature{
+            max-width: 450px;
+            & svg{
+                  width: 70px;
+                  height: 70px;
+            }
+      }
+  }
