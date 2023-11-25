@@ -1,14 +1,6 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
-@media (max-width:640px){
-    .nav-port{
-        justify-content: flex-start !important;
-        max-width: 320px;
-        margin-right: auto !important;
-    }
-}
-
 .hide{
     display: none;
 }
@@ -36,5 +28,12 @@
     }
     @media (max-width:640px){
         margin: 0;
+    }
+}
+@media (max-width:480px){
+    .nav-port{
+        justify-content: flex-start;
+        max-width: 320px;
+        margin-right: auto;
     }
 }

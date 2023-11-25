@@ -123,15 +123,6 @@
       }
   }
 
-  @media (max-width:480px){
-    .card{
-        & img{
-            width: 450px;
-            height: 460px;
-        }
-    }
-}
-
 @media (max-width:1024px){
     .card{
         & img{
@@ -140,3 +131,13 @@
         }
     }
 }
+
+@media (max-width:480px){
+    .card{
+        & img{
+            width: 450px;
+            height: 460px;
+        }
+    }
+}
+
