@@ -12,16 +12,10 @@
 		}
 
 		&_footer {
+            justify-content: space-around;
             @include container(1200px);
             margin: 0 auto;
             align-items: baseline;
-            @media (max-width:1170px){
-                justify-content: center;
-    
-            }
-            @media (max-width:768px){
-                justify-content: space-evenly;        
-            }
             &_mailing{
                 margin-left: auto;
                 @media (max-width:1170px){
@@ -38,6 +32,9 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
+    @media (max-width:768px){
+        margin-bottom: 30px;
+    }    
 }
 
 .section {
@@ -94,6 +91,7 @@ section{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .features{

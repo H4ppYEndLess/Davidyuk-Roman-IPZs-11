@@ -236,7 +236,7 @@ footer .socials__icon {
 	transition: 300ms ease-in;
 }
 .modal__span-text {
-	margin-left: 24px;
+	margin-left: 10px;
 }
 @media (max-width: 768px) {
 	.modal__span-text {
@@ -814,6 +814,9 @@ footer .socials__icon {
 		max-width: 226px;
 		max-height: 92px;
 		padding: 16px 60px 16px 60px;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 }
 @media (max-width: 640px) {
@@ -840,6 +843,11 @@ footer {
 @media (max-width: 1170px) {
 	footer {
 		padding: 60px;
+	}
+}
+@media (max-width: 768px) {
+	footer {
+		padding: 60px 0;
 	}
 }
 @media (max-width: 1170px) {
@@ -1007,6 +1015,8 @@ footer {
 	margin-right: auto;
 }
 .container_footer {
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1020,20 +1030,6 @@ footer {
 	-webkit-box-align: baseline;
 	    -ms-flex-align: baseline;
 	        align-items: baseline;
-}
-@media (max-width: 1170px) {
-	.container_footer {
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-	}
-}
-@media (max-width: 768px) {
-	.container_footer {
-		-webkit-box-pack: space-evenly;
-		    -ms-flex-pack: space-evenly;
-		        justify-content: space-evenly;
-	}
 }
 .container_footer_mailing {
 	margin-left: auto;
@@ -1051,6 +1047,11 @@ footer {
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+	.title {
+		margin-bottom: 30px;
+	}
 }
 
 .section_hero {
@@ -1118,6 +1119,9 @@ section {
 	gap: 30px;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .features {
@@ -1485,6 +1489,10 @@ section {
 		        transform: scale(0);
 	}
 }
+header {
+	border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
 	font-family: Raleway;
 	color: #212121;
