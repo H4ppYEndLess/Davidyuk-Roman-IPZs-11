@@ -1129,7 +1129,7 @@ section {
 }
 @media (max-width: 768px) {
 	.features {
-		padding: 60px 0 0 0;
+		padding: 60px 0 60px 0;
 	}
 }
 .features__list {
