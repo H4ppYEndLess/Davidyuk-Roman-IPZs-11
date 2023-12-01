@@ -1,26 +1,6 @@
 @import"../variables.scss";
 @import"../mixin.scss";
 
-@media (max-width:1024px){
-    .commissions{
-        justify-content: center;
-        max-width: 354px !important;
-        & img{
-            width: 354px;
-            height: 294px;
-        }
-    }
-}
-
-@media (max-width:640px){
-    .commission{
-        max-width: 450px !important;
-    }
-    .commission img{
-    max-width: 450px;
-    }
-}
-
 .nav-port {
     display: flex;
     justify-content: center;
@@ -48,6 +28,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 .commission {
     max-width: 370px;
@@ -101,5 +82,27 @@
         line-height: 30px; /* 187.5% */
         letter-spacing: 0.48px;
         margin-top: 4px;
+    }
+}
+
+@media (max-width:1024px){
+    .commissions{
+
+        & img{
+            width: 354px;
+            height: 294px;
+        }
+    }
+}
+
+@media (max-width:640px){
+    .commission{
+        max-width: 450px;
+        &-top img{
+            width: 450px;
+        }
+    }
+    .commission img{
+    max-width: 450px;
     }
 }

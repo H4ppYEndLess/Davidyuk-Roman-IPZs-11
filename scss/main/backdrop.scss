@@ -8,7 +8,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.20);
     transition: 300ms ease-in;
-    z-index: 9999;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
 }
 .is-hidden {
     opacity: 0;

@@ -1,53 +1,6 @@
 @import"./variables.scss";
 @import"./mixin.scss";
 
-@media (max-width:1024px){
-    .section{
-        &_work{
-            display: none
-        }
-        &_footer{
-            padding: 60px !important;
-        }
-        &_features {
-            padding: 60px 0 60px 0 !important;
-        }
-    
-        &_work {
-            padding-bottom: 60px !important;
-        }
-    
-        &_team {
-            padding: 60px 0 60px 0 !important;
-        }
-    
-        &_clients {
-            padding: 60px 0 60px 0 !important;
-        }
-        &_portfolio {
-            padding-top: 60px !important;
-            padding-bottom: 60px !important;
-        }
-    }
-    .container{
-        @include container(768px !important);
-        justify-content: center !important;
-        &_footer{
-            justify-content: center;
-            &_mailing{
-                margin-top: 60px;
-                text-align: center;
-                margin-left: 0 !important;
-            }
-        }
-    }
-}
-
-@media (max-width:640px){
-        .container{
-        max-width: 450px !important;
-    }
-}
 
 .container {
     @include container(1200px);
@@ -62,8 +15,18 @@
             @include container(1200px);
             margin: 0 auto;
             align-items: baseline;
+            @media (max-width:1170px){
+                justify-content: center;
+    
+            }
+            @media (max-width:768px){
+                justify-content: space-evenly;        
+            }
             &_mailing{
                 margin-left: auto;
+                @media (max-width:1170px){
+                    margin: 0;
+                }
             }
 		}
 }
@@ -85,19 +48,8 @@
         text-align: center;
     }
 
-    &_features {
-        padding: 94px 0 94px 0;
-    }
-
     &_work {
         padding-bottom: 94px;
-    }
-
-    &_footer {
-        background-color: $footer-color;
-        width: 100%;
-        position: absolute;
-        padding: 60px 0 60px 0;
     }
 
     &_team {
@@ -116,6 +68,65 @@
     }
 }
 
+.work{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team{
+    background-color: $ligh-gray;
+    &__list{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+section{
+    padding: 94px 0;
+    @media (max-width:768px){
+        padding: 60px 0;
+    }
+}
+
+.clients{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features{
+    padding: 94px 0 0 0;
+    @media (max-width:768px){
+        padding: 60px 0 0 0;
+    }
+    &__list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .burger{
     display: none;
 }
+
+@media (max-width:768){
+    .container{
+        @include container(738px);
+        justify-content: center;
+        &_footer{ 
+            &_mailing{
+                margin-top: 60px;
+                text-align: center;
+                margin-left: 0;
+                @media (max-width:768px){
+                    margin: 0;   
+                }
+            }
+        }
+    }
+}
+

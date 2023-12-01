@@ -14,10 +14,10 @@
             z-index: 99999;
             padding: 48px 40px 48px 40px;
             z-index: 45;
-            transition-duration: 300ms !important;
+            transition-duration: 300ms ;
             &_active{
-                left: 0 !important;
-                transition-duration: 300ms !important;
+                left: 0 ;
+                transition-duration: 300ms ;
             }
         }
         &__social{
@@ -29,8 +29,7 @@
             font-weight: 500;
             line-height: 122.22%;
             letter-spacing: 0.36px;
-            max-width: 70% !important;
-            justify-content: center;
+            justify-content: flex-start;
             &_item{
                 position: relative;
                 &::after{
@@ -52,17 +51,17 @@
     }
     
     .logo{
-        margin-right:0 !important;
+        margin-right:0 ;
         &_foooter{
-            font-size: 24px !important;
+            font-size: 24px ;
         }
     }
     .info {
         flex-direction: column;
-        gap:10px !important; 
-        padding-top: 19px !important;
-        padding-bottom: 19px !important;
-        align-items: normal !important;
+        gap:10px ; 
+        padding-top: 19px ;
+        padding-bottom: 19px ;
+        align-items: normal ;
         font-size: 12px;
         display: none !important;
     }
@@ -91,7 +90,7 @@
         &::after,
         &::before{
             transform: rotate(180deg);
-            transition-duration: 300ms !important;
+            transition-duration: 300ms ;
         }
         & span{
             position: absolute;
@@ -110,12 +109,12 @@
             &::before{
                 bottom: 13.5px;
                 transform: rotate(-45deg);
-                transition-duration: 300ms !important;
+                transition-duration: 300ms ;
             }
             &::after{
                 top: 13.5px;
                 transform: rotate(45deg);
-                transition-duration: 300ms !important;
+                transition-duration: 300ms ;
             }
             & span{
                 transform: scale(0);
