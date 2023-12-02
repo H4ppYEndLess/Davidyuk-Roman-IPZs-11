@@ -1,0 +1,185 @@
+@import '../variebles.scss';
+@import '../mixin.scss';
+
+.slider {
+    max-width: 1120px;
+		&__wrapper {
+            margin-top: 30px;
+		}
+
+		&__slide img{
+            border-radius: 30px;
+		}
+        & img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 15px;
+        }
+        &__next{
+            position: absolute;
+            background-color: rgba($complementary-color,0.5);
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50px;
+            transform: translate(-50%, -50%);
+            top: 40%;
+            right: -100px;
+            padding: 20px;
+            translate: 50% ;
+            transition: 100ms ease-in;
+            cursor: pointer;
+            &:hover{
+                background-color: $background-color;
+                transition: 100ms ease-in;
+            }
+        }
+
+        &__prev{
+            position: absolute;
+            background-color: rgba($complementary-color,0.5);
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50px;
+            transform: translate(-50%, -50%);
+            top: 40%;
+            left: -100px;
+            padding: 20px;
+            translate: 50% ;
+            transition: 100ms ease-in;
+            cursor: pointer;
+            &:hover{
+                background-color: $background-color;
+                transition: 100ms ease-in;
+            }
+        }
+        &__pagination{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        &__text,
+        &__title{
+            margin: 0 auto;            
+        }
+}
+.swiper{
+    &-pagination{
+        position:static !important;
+        display:flex !important;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        &-bullet{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            padding: 20px !important; 
+            width: 100px !important;
+            height: 100px !important;
+            background-color: rgba($soft-blue, 1) !important;   
+            &-active{
+                background-color: rgba($main-color, 1.0) !important;   
+            } 
+
+        }
+    }
+}
+@media (max-width:1340px){
+    .swiper{
+        max-width: 900px;
+    
+    &__prev{
+        left: -50;
+    }
+    &__next{
+        right: -50;
+    }
+    }
+}
+@media (max-width:1200px){
+
+    .slider{
+        max-width: 800px;
+        &__prev{
+            padding: 10px;
+            left: 0px;
+            max-width: 60px;
+            max-height: 60px;
+            & svg{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__next{
+            padding: 10px;
+            right: 0px;
+            max-width: 60px;
+            max-height: 60px;
+            & svg{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .swiper{
+        &-pagination{
+            gap: 10px;
+            flex-wrap: wrap;
+            &-bullet{
+                width: 60px !important;
+                height: 60px !important;
+                padding: 10px !important;
+
+            }
+        }
+    }
+}
+
+@media (max-width:1140px){
+
+    .slider{
+        max-width: 500px;
+        &__prev{
+            display: none;
+        }
+        &__next{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:800px){
+    .swiper{
+        &-pagination{
+            gap: 5px;
+            &-bullet{
+                width: 45px !important;
+                height: 45px !important;
+                padding: 5px !important;
+
+            }
+        }
+    }
+    .slidet__text{
+        display: none;
+    }    
+}
+
+@media (max-width:600px){
+    .slider{
+        max-width: 400px;
+    }
+    .section{
+        margin: 10px 20px 0 20px;
+    }
+    .swiper{
+        &-pagination{
+            gap: 0;
+        }
+    }
+}
+@media (max-width:480px){
+    .slider{
+        max-width: 250px;
+    }
+}

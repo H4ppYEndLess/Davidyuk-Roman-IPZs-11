@@ -1,130 +1,197 @@
-@import"./variables.scss";
-@import"./mixin.scss";
+@import './variebles.scss';
+@import './mixin.scss';
 
-
-.container {
-    @include container(1200px);
-		&_header {
-            @include container(1200px);
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-		}
-
-		&_footer {
-            justify-content: space-around;
-            @include container(1200px);
-            margin: 0 auto;
-            align-items: baseline;
-            &_mailing{
-                margin-left: auto;
-                @media (max-width:1170px){
-                    margin: 0;
-                }
-            }
-		}
+body{
+    color: $complementary-color;
+    font-size: 32px;
+    font-weight: 400;
+    background-color: $background-color;
 }
 
-.title {
-    color: $main-color;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    @media (max-width:768px){
-        margin-bottom: 30px;
-    }    
+.rel{
+    position: relative;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+}
+
+.container {
+    @include container(1440px, 50px 30px 50px 30px, white, 10px);
+    justify-content: center;
+    &_header {
+        @include container(90%, 0 80px 0 80px, rgba(255, 255, 255, 0.7), 10px);
+        width: 100%;
+        position: fixed;
+        transform: translatex(-50%);
+        top: 15px;
+        left: 50%;
+        align-items: center;
+        z-index: 99;
+        & nav{
+            margin-left: auto;
+        }
+    }
+    &_hero{
+        max-width: 850px;
+        margin: auto;
+    }
+}
+
+.button {
+
+    &_modal {
+        @include button(15px 15px 15px 10px,$main-color,white,0px)
+    }
+
+    &_hero {
+        @include button(15px 35px 15px 20px, $main-color, white, 0px);
+        text-align: center;
+        font-size: 64px;
+        &:hover,
+        &:focus{
+            background-color: $hover-color;
+        }
+    }
+
+    &_skins {
+        @include button(15px 50px, $main-color, white,5px);
+        position: absolute;
+        bottom: 10%;
+        left: 300px;
+        font-size: 64px;
+        @include media(480px){
+            font-size: 32px;
+        }
+        &:hover{
+            background-color: $hover-color;
+        }
+    }
+
+
+    &_footer {
+        @include button(0 10px 0 5px,$main-color, white,5px);
+    }
 }
 
 .section {
-
-    &_hero {
-        background-color: $footer-color;
+    margin: 50px 80px 0 80px;
+    &_hero{
         width: 100%;
+        background-color: $complementary-color;
         text-align: center;
+        padding: 200px 0 200px 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 28.13%, rgba(207, 115, 7, 0.35) 59.37%, rgba(255, 134, 22, 0.35) 100%), url(../images/hero-bg.jpg), lightgray 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:100vh;
+        color:white;
+        &_heroes{
+            width: 100%;
+            background-color: $complementary-color;
+            text-align: center;
+            padding: 200px 0 200px 0;
+            background: linear-gradient(180deg, rgba(18, 18, 98, 0.00) 0%, rgba(4, 0, 223, 0.21) 39.58%, rgba(4, 2, 112, 0.42) 100%), url(../images/widow.jpg), lightgray 50% / cover no-repeat;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            height:100vh;
+            color:white;
+        }
+    }
+}
+.title {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 64px;
+    letter-spacing: 7.68px;
+    &_hero {
+        color: white;
+        font-size: 72px;
+        letter-spacing: 9.6px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 
-    &_work {
-        padding-bottom: 94px;
+    &_player {
+        margin: 50px auto;
+        max-width: 720px;
+        text-align: center;
+        & span{
+            color: $main-color
+        }
     }
 
-    &_team {
-        background-color: $ligh-gray;
-        padding: 94px 0 94px 0;
+    &_skins{
+        position: absolute;
+        left: 150px;
+        z-index: 5;
+        top: 5%;
+        max-width: 400px;
+        color: white;
+        font-size: 64px;
+        & span{
+            color: $main-color;
+        }
     }
 
-    &_clients {
-        padding: 94px 0 94px 0;
-        font-weight: 700;
-        font-size: 36px;
-    }
-    &_portfolio {
-        padding-top: 94px;
-        padding-bottom: 94px;
+    &_footer {
+        margin: 0 auto;
     }
 }
 
-.work{
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.team{
-    background-color: $ligh-gray;
-    &__list{
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-section{
-    padding: 94px 0;
-    @media (max-width:768px){
-        padding: 60px 0;
-    }
+@font-face 
+{ 
+font-family: "over";  
+src: url("../font/bignoodletoooblique.ttf")format("woff2"); 
 }
 
-.clients{
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.features{
-    padding: 94px 0 0 0;
-    @media (max-width:768px){
-        padding: 60px 0 60px 0;
+@media (max-width:1200px){
+    .title{
+        font-size: 32px;
     }
-    &__list {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-.burger{
-    display: none;
-}
-
-@media (max-width:768){
-    .container{
-        @include container(738px);
-        justify-content: center;
-        &_footer{ 
-            &_mailing{
-                margin-top: 60px;
-                text-align: center;
-                margin-left: 0;
-                @media (max-width:768px){
-                    margin: 0;   
-                }
+    .section{
+        &_hero{
+            background-position: right;
+            &_heroes{
+                background-position:75%;
             }
         }
     }
 }
+@media (max-width:800px){
+    h2{
+        font-size: 32px;
+    }
+    .title{
+        &_hero{
+            font-size: 48px;
+        }
+    }
+    .section{
+        margin: 20px 40px 0 40px;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .container{
+        padding: 20px 10px;
+    }
+}
 
+@media (max-width:480px){
+    .container{
+        &_hero h2{
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+    .title{
+        &_hero{
+            font-size: 32px;
+        }
+    }
+    
+}

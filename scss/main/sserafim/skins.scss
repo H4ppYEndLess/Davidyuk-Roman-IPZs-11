@@ -1,0 +1,237 @@
+@import '../../variebles.scss';
+@import '../../mixin.scss';
+
+.wallpaper {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    &_dva {
+        @include wallpaper(url(../images/d`va.webp))
+    }
+
+    &_kiriko {
+        @include wallpaper(url(../images/kiriko.webp))
+    }
+
+    &_sombra {
+        @include wallpaper(url(../images/sombra.webp))
+    }
+
+    &_tracer {
+        @include wallpaper(url(../images/traycer.webp))
+    }
+
+    &_brigitte {
+        @include wallpaper(url(../images/brigitte.webp))
+    }
+    &_secret{
+        @include wallpaper(url(../images/vo.gif));
+        background-repeat: repeat;
+    }
+}
+.boob{
+    &:hover{
+        transition: 250ms ease-in;
+        border: 3px solid $hover-color !important;
+    }
+}
+.card {
+    position: absolute;
+    display: flex;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 95px;
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    & img{
+        position: absolute;
+        transform: skewX(15deg);
+        height: 600px;
+        left: -110px;
+    }
+    &__kiriko {
+        @include card();
+    }
+    &__name {
+        position: absolute;
+        bottom: 5%;
+        background: rgba($soft-blue,0.5);
+        width: 100%;
+        padding: 5px 0;
+        color: white;
+        font-size: 48px;
+        & p{
+            text-align: center;
+            margin: 0 auto;
+        }       
+    }
+
+    &__dva {
+        @include card();
+        & img{
+            height: 650px;
+            left: -65px;
+            top: -30px 
+        }
+    }
+
+    &__sombra {
+        @include card();
+        & img{
+            height: 400px;
+            left: -60px;
+        }
+    }
+
+    &__tracer {
+        @include card();
+        & img{
+            height: 500px;
+            left: -80px;
+        }
+    }
+
+    &__bridgitte {
+        @include card();
+       
+        & img{
+            height: 600px;
+            left: -90px;
+
+        }
+    }
+}
+.enabled{
+    border: 3px solid $main-color;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($soft-blue,0);
+        z-index: 99;
+    }
+}
+.disabled{
+    border: 3px solid $complementary-color !important;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($soft-blue,0.5) !important;
+        z-index: 99;
+    }    
+}
+
+.off{
+    display: none;
+    transition: 300ms ease-in;
+}
+
+@media (max-width:1200px){
+    .card{
+        &__kiriko{
+            width: 100px;
+            height: 350px;
+        }
+        &__dva{
+            width: 100px;
+            height: 350px;
+        }
+        &__bridgitte{
+            width: 100px;
+            height: 350px;
+        }
+        &__tracer{
+            width: 100px;
+            height: 350px;
+        }
+        &__sombra{
+            width: 100px;
+            height: 350px;
+        }
+        &__name{
+            font-size: 32px;
+        }
+    }
+    .wallpapers{
+        background-position: 70%;
+    }
+}
+@media (max-width:1200px){
+    .card{
+        flex-direction: column;
+        left: 10%;
+        top: 23%;
+        transform: translateY(0);
+        &__name p{
+            font-size: 24px;
+        }
+        &__kiriko{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            transform: none;
+            & img{
+                transform: none;
+                height: 200px;
+                left: -30px;
+            }
+
+        }
+        &__dva{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            transform: none;
+            & img{
+                transform: none;
+                height: 200px;
+                left: -30px;
+            }
+        }
+        &__bridgitte{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            transform: none;
+            & img{
+                transform: none;
+                height: 200px;
+                left: -30px;
+            }
+        }
+        &__tracer{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            transform: none;
+            & img{
+                transform: none;
+                height: 200px;
+                left: -30px;
+            }
+        }
+        &__sombra{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            transform: none;
+            & img{
+                transform: none;
+                height: 200px;
+                left: -30px;
+            }
+        }
+    }
+    .title_skins{
+        font-size: 48px;
+        left: 10%;
+    }
+    .button_skins{
+        bottom: 2%;
+        left: 10%;
+    }
+}
