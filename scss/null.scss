@@ -1,8 +1,7 @@
-@import './variebles.scss';
-
 a{
     text-decoration: none;
     cursor: pointer;
+    color: $main-color;
 }
 button{
     cursor: pointer;
@@ -12,58 +11,29 @@ li{
 }
 img{
     display: block;
+    z-index: 1;
 }
 ul{
     padding-left: 0px;
+    margin: 0;
+}
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--main_color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+p{
+    margin: 0;
+}
+header{
+    position: relative;
 }
 
 *{
     box-sizing: border-box;
 }
-// Reset box-sizing and remove margin/padding for all elements
-* {
-    box-sizing: border-box;
-    padding: 0;
-  }
-  body{
-    margin: 0 auto;
-  }
-  // Remove list styles
-  ul, ol {
-    list-style: none;
-  }
-  
-  // Remove default anchor styles
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  // Remove default button styles
-  button, select, textarea {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-  }
-  
-  // Remove default form styles
-  // input, textarea, select {
-  //   appearance: none;
-  //   -webkit-appearance: none;
-  //   -moz-appearance: none;
-  // }
-  
-  // Optionally, you can include a CSS normalize to handle cross-browser inconsistencies
-  
-  // Your custom styles go here
-  body {
-    font-family: over, sans-serif;
-    // Add other custom styles for the body
-  }
-  
-  // Add your custom styles for other elements
-  
+footer .socials__icon{
+    fill: white;
+}
