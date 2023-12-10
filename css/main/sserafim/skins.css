@@ -1,0 +1,329 @@
+.wallpaper {
+	width: 100%;
+	height: 900px;
+	position: relative;
+}
+.wallpaper_dva {
+	background-image: url(../images/d`va.webp);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.wallpaper_kiriko {
+	background-image: url(../images/kiriko.webp);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.wallpaper_sombra {
+	background-image: url(../images/sombra.webp);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.wallpaper_tracer {
+	background-image: url(../images/traycer.webp);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.wallpaper_brigitte {
+	background-image: url(../images/brigitte.webp);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.wallpaper_secret {
+	background-image: url(../images/vo.gif);
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-repeat: repeat;
+}
+
+.boob:hover {
+	-webkit-transition: 250ms ease-in;
+	transition: 250ms ease-in;
+	border: 3px solid rgb(221, 94, 21) !important;
+}
+
+.card {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	top: 50%;
+	left: 95px;
+	display: flex;
+	gap: 15px;
+	margin: 0 auto;
+}
+.card img {
+	position: absolute;
+	-webkit-transform: skewX(15deg);
+	        transform: skewX(15deg);
+	height: 600px;
+	left: -110px;
+}
+.card__kiriko {
+	background-color: #333E48;
+	width: 150px;
+	height: 400px;
+	-webkit-transform: skewX(-15deg);
+	        transform: skewX(-15deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ED6516;
+}
+.card__name {
+	position: absolute;
+	bottom: 5%;
+	background: rgba(46, 97, 143, 0.5);
+	width: 100%;
+	padding: 5px 0;
+	color: white;
+	font-size: 48px;
+}
+.card__name p {
+	text-align: center;
+	margin: 0 auto;
+}
+.card__dva {
+	background-color: #333E48;
+	width: 150px;
+	height: 400px;
+	-webkit-transform: skewX(-15deg);
+	        transform: skewX(-15deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ED6516;
+}
+.card__dva img {
+	height: 650px;
+	left: -65px;
+	top: -30px;
+}
+.card__sombra {
+	background-color: #333E48;
+	width: 150px;
+	height: 400px;
+	-webkit-transform: skewX(-15deg);
+	        transform: skewX(-15deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ED6516;
+}
+.card__sombra img {
+	height: 400px;
+	left: -60px;
+}
+.card__tracer {
+	background-color: #333E48;
+	width: 150px;
+	height: 400px;
+	-webkit-transform: skewX(-15deg);
+	        transform: skewX(-15deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ED6516;
+}
+.card__tracer img {
+	height: 500px;
+	left: -80px;
+}
+.card__bridgitte {
+	background-color: #333E48;
+	width: 150px;
+	height: 400px;
+	-webkit-transform: skewX(-15deg);
+	        transform: skewX(-15deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #ED6516;
+}
+.card__bridgitte img {
+	height: 600px;
+	left: -90px;
+}
+
+.enabled {
+	border: 3px solid #ED6516;
+}
+.enabled::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 97, 143, 0);
+	z-index: 99;
+}
+
+.disabled {
+	border: 3px solid #333E48 !important;
+}
+.disabled::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 97, 143, 0.5) !important;
+	z-index: 99;
+}
+
+.off {
+	display: none;
+	-webkit-transition: 300ms ease-in;
+	transition: 300ms ease-in;
+}
+
+@media (max-width: 1200px) {
+	.card__kiriko {
+		width: 100px;
+		height: 350px;
+	}
+	.card__dva {
+		width: 100px;
+		height: 350px;
+	}
+	.card__bridgitte {
+		width: 100px;
+		height: 350px;
+	}
+	.card__tracer {
+		width: 100px;
+		height: 350px;
+	}
+	.card__sombra {
+		width: 100px;
+		height: 350px;
+	}
+	.card__name {
+		font-size: 32px;
+	}
+	.wallpapers {
+		background-position: 70%;
+	}
+}
+@media (max-width: 1200px) {
+	.card {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		left: 10%;
+		top: 23%;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	.card__name p {
+		font-size: 24px;
+	}
+	.card__kiriko {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.card__kiriko img {
+		-webkit-transform: none;
+		        transform: none;
+		height: 200px;
+		left: -30px;
+	}
+	.card__dva {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.card__dva img {
+		-webkit-transform: none;
+		        transform: none;
+		height: 200px;
+		left: -30px;
+	}
+	.card__bridgitte {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.card__bridgitte img {
+		-webkit-transform: none;
+		        transform: none;
+		height: 200px;
+		left: -30px;
+	}
+	.card__tracer {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.card__tracer img {
+		-webkit-transform: none;
+		        transform: none;
+		height: 200px;
+		left: -30px;
+	}
+	.card__sombra {
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.card__sombra img {
+		-webkit-transform: none;
+		        transform: none;
+		height: 200px;
+		left: -30px;
+	}
+	.title_skins {
+		font-size: 48px;
+		left: 10%;
+	}
+	.button_skins {
+		bottom: 2%;
+		left: 10%;
+	}
+}

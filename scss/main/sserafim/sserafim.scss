@@ -1,0 +1,154 @@
+.sserafim {
+
+    &_first {
+        display: flex;
+    }
+
+    &_second {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__player {
+        &_first {
+            margin-right: 35px;
+            align-self: center;
+        }
+
+        &_second {
+            width: 80%;
+            height: 450px;        
+        }
+    }
+
+    &__content {
+        max-width: 730px;
+    }
+}
+iframe{
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media (max-width:1250px){
+    .sserafim {
+        &_first {
+            display: flex;
+        }
+    
+        &_second {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+    
+        &__player {
+            &_first {
+                align-self: center;
+                height: 80%;
+                width: 100%;
+            }
+    
+            &_second {
+                width: 80%;
+                height: 450px;        
+            }
+        }
+    
+        &__content {
+            font-size: 24px;
+        }
+    }    
+}
+@media (max-width:850px){
+    .sserafim {
+        &__content{
+                font-size: 16px;
+                max-width: 300px;
+        }
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:800px){
+    .sserafim {
+        &_first {
+            flex-direction: column;
+        }
+        &__player {
+            &_first {
+                align-self: center;
+                height: 400px;
+                width: 500px;
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+        &__content{
+            font-size: 24px;
+            max-width: 500px;
+            max-height: 400px;            
+        }        
+    }
+}
+@media (max-width:650px){
+    .sserafim {
+        &__player {
+            &_first {
+                height: 200px;
+                width: 300px;
+            }
+            &_second{
+                max-height: 200px
+            }
+        }
+        &__content{
+            max-width: 500px;            
+        }        
+    }
+}
+@media (max-width:420px){
+    .sserafim {
+        &__player {
+            &_first {
+                height: 200px;
+                width: 300px;
+            }
+        }
+        &__content{
+            max-width: 300px;
+            font-size: 16px;           
+        }        
+    }
+}
+@media (max-width:380px){
+    .sserafim {
+        &__player {
+            &_first {
+                height: 200px;
+                width: 300px;
+            }
+        }
+        &__content p{
+            display: none;
+        }        
+    }
+    .title{
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width:800px){
+    .sserafim {
+        &__player {
+            &_first {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-bottom: -8px;
+	gap: 10px;
+}
+.logo__text {
+	margin-top: -10px;
+}
+.logo_blizzard {
+	cursor: pointer;
+	position: relative;
+}
+.logo_blizzard:hover::before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	border-radius: 2px;
+	background-color: #9EDCFF;
+}
+
+.navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 80px;
+	margin: 0 auto;
+}
+.navigation__item {
+	padding: 15px 0 15px 0;
+}
+.navigation__item:hover {
+	color: #ED6516;
+	-webkit-transition: 250ms;
+	transition: 250ms;
+	cursor: pointer;
+}
+@media (max-width: 1200px) {
+	.logo {
+		gap: 5px;
+	}
+	.navigation {
+		gap: 40px;
+	}
+	.container_header {
+		padding: 0 40px;
+	}
+}
+@media (max-width: 750px) {
+	.logo {
+		gap: 5px;
+	}
+	.navigation {
+		gap: 40px;
+	}
+	.container_header {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		padding: 0 40px;
+	}
+	.container_header nav {
+		margin: 0 auto;
+	}
+}

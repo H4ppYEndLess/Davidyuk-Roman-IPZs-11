@@ -1,6 +1,10 @@
 @import"./variables.scss";
 @import"./mixin.scss";
 
+header{
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     font-family: Raleway;
     color: $main-color;

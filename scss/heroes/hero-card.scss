@@ -1,0 +1,39 @@
+@import '../mixin.scss';
+@import '../variebles.scss';
+.cards{
+    @include container(1440px, 0,none,0);
+    gap:50px;
+}
+.hero-card {
+    background-color: white;
+    box-shadow: 0px 5px 2px 0px rgba($soft-blue, 0.25);
+    max-width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    &__image {
+        transition: 250ms ease;
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    &__bottom {
+        padding: 0 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        & p{
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+    &:hover &__image{
+            height: 300px;
+            transition: 250ms ease;
+    }
+
+    &__icon {
+    }
+}
